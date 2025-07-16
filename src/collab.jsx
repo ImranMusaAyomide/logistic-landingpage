@@ -1,5 +1,5 @@
 import React from 'react'
-import './collab.css'
+import './Collab.css'
 import Quanon from './assets/quanon.svg'
 import Dhl from './assets/dhl.svg'
 import Aws from './assets/aws.svg'
