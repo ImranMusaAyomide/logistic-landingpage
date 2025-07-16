@@ -160,4 +160,17 @@
   .footer-bottom {
     padding: 18px 4vw 10px 4vw;
   }
+}
+
+@media (max-width: 600px) {
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .newsletter-form input[type="email"],
+  .newsletter-form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
 } 

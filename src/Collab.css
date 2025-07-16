@@ -1,7 +1,26 @@
- .large-container {
-    width: 100%;
-    background-color: transparent;
- }
- .large-container img {
-    margin: 30px;
- }
+.large-container {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.large-container img {
+  margin: 30px;
+  width: 120px;
+  height: auto;
+  transition: width 0.2s, margin 0.2s;
+}
+
+@media (max-width: 600px) {
+  .large-container {
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .large-container img {
+    margin: 12px;
+    width: 70px;
+  }
+}

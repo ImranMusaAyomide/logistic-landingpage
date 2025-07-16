@@ -13,7 +13,7 @@ import NumberStats from './number';
 import TeamMember from './TeamMember';
 import OurFAQ from './OurFAQ';
 import BlogNews from './BlogNews';
-import Collab from './collab';
+import Collab from './Collab';
 import Footer from './footer'
 
 function App() {

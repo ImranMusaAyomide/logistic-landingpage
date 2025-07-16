@@ -89,4 +89,16 @@
     margin: 16px 0 0 0;
     transform: rotate(90deg);
   }
+}
+
+@media (max-width: 600px) {
+  .working-progress-steps {
+    align-items: center;
+  }
+  .working-progress-step {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+  }
 } 
