@@ -6,7 +6,7 @@ import Aws from './assets/aws.svg'
 import Api from './assets/api.svg'
 import Figma from './assets/figma.svg'
 
-const collab = () => {
+const Collab = () => {
   return (
     <div className='large-container'>
       <img src={Quanon} alt="" />
@@ -18,4 +18,4 @@ const collab = () => {
   )
 }
 
-export default collab
+export default Collab
