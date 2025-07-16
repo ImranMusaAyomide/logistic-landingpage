@@ -1,0 +1,38 @@
+.number-stats-root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  margin: 40px 0;
+}
+
+.number-stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number-stats-icon {
+  background: #ff5722;
+  color: #fff;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.number-stats-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #37474f;
+  margin-bottom: 4px;
+}
+
+.number-stats-label {
+  font-size: 1rem;
+  color: #607d8b;
+  text-align: center;
+} 

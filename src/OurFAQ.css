@@ -1,0 +1,154 @@
+.faq-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 40px 0;
+}
+
+.faq-content {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.faq-title-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq-subtitle {
+  color: #ff6b35;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 4px;
+}
+
+.faq-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
+.faq-title-highlight {
+  color: #ff6b35;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.faq-item {
+  background: #f7f7f7;
+  border-radius: 32px;
+  padding: 18px 28px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  border: 2px solid transparent;
+}
+.faq-item.open {
+  background: #eaf6f6;
+  border-color: #ff6b35;
+}
+
+.faq-question-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.faq-question {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  color: #ff6b35;
+}
+
+.faq-item.open .faq-icon {
+  color: #222e50;
+}
+
+.faq-answer {
+  margin-top: 12px;
+  font-size: 0.98rem;
+  color: #444;
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px 18px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.faq-asset {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  position: relative;
+}
+
+.faq-image {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.faq-experience-box {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  background: #ff6b35;
+  color: #fff;
+  border-radius: 8px;
+  padding: 24px 28px 18px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+.faq-experience-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.faq-experience-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .faq-container {
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+  .faq-asset {
+    align-items: center;
+  }
+  .faq-image {
+    width: 100%;
+    max-width: 340px;
+    height: 180px;
+  }
+  .faq-experience-box {
+    left: 12px;
+    bottom: 12px;
+    padding: 18px 18px 12px 18px;
+  }
+} 

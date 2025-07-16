@@ -1,0 +1,92 @@
+.working-progress-container {
+  width: 100%;
+  padding: 40px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.working-progress-header {
+  margin-bottom: 32px;
+}
+
+.working-progress-label {
+  color: #ff6a2b;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.working-progress-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #22313f;
+  margin: 0;
+}
+
+.highlight {
+  color: #ff6a2b;
+}
+
+.working-progress-steps {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.working-progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 200px;
+  max-width: 250px;
+}
+
+.icon-circle {
+  background: #ff6a2b;
+  color: #fff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.step-title {
+  font-weight: 700;
+  color: #22313f;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.step-desc {
+  color: #6b7a8f;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.arrow {
+  position: absolute;
+  right: -40px;
+  top: 28px;
+  color: #ff6a2b;
+  font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+  .working-progress-steps {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .arrow {
+    position: static;
+    margin: 16px 0 0 0;
+    transform: rotate(90deg);
+  }
+} 

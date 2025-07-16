@@ -1,0 +1,145 @@
+.hero-section {
+  width: 100%;
+  min-height: 340px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 57, 59, 0.55);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 48px 32px 32px 48px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hero-top-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.85;
+}
+.hero-dot {
+  width: 7px;
+  height: 7px;
+  background: #ff6a3d;
+  border-radius: 50%;
+  display: inline-block;
+}
+.hero-subtitle {
+  letter-spacing: 0.5px;
+}
+
+.hero-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin: 0 0 8px 0;
+  max-width: 480px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.hero-quote-btn {
+  background: #ff6a3d;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.hero-quote-btn:hover {
+  background: #e55a2c;
+}
+
+.hero-customers {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-avatars {
+  display: flex;
+  align-items: center;
+  margin-right: 6px;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: #ccc;
+  display: inline-block;
+  margin-left: -10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+.avatar-1 { background: #ffb347; }
+.avatar-2 { background: #2196f3; }
+.avatar-3 { background: #4caf50; }
+
+.hero-reviews {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.1;
+}
+.hero-review-label {
+  font-weight: 500;
+}
+.hero-review-count {
+  font-size: 11px;
+  opacity: 0.85;
+}
+
+@media (max-width: 700px) {
+  .hero-content {
+    padding: 24px 10px 18px 10px;
+    max-width: 100%;
+  }
+  .hero-title {
+    font-size: 1.3rem;
+  }
+  .hero-section {
+    min-height: 220px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+} 

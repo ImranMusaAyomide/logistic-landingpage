@@ -1,0 +1,115 @@
+.portfolio-section {
+  background: #f7f8fa;
+  padding: 72px 0 64px 0;
+  text-align: center;
+}
+
+.portfolio-subtitle {
+  color: #ff7043;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.portfolio-title {
+  font-weight: 800;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2.3rem;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-grid {
+  margin-top: 0;
+}
+
+.portfolio-step {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+  padding: 0 0 28px 0;
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.portfolio-step:hover {
+  box-shadow: 0 8px 40px rgba(243, 198, 185, 0.18);
+  transform: translateY(-6px) scale(1.025);
+}
+
+.portfolio-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 180px;
+  background: none;
+  border-radius: 0;
+  margin: 0 auto 0 auto;
+  box-shadow: none;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.portfolio-icon-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  transition: filter 0.3s;
+}
+
+.portfolio-step-title {
+  margin-top: 22px;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #222;
+  letter-spacing: 0.2px;
+}
+
+.portfolio-step-desc {
+  color: #555;
+  font-size: 1rem;
+  padding: 0 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .portfolio-icon,
+  .portfolio-icon-img {
+    height: 140px;
+  }
+  .portfolio-step {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-title {
+    font-size: 1.3rem;
+  }
+  .portfolio-step-title {
+    font-size: 1rem;
+  }
+  .portfolio-step-desc {
+    font-size: 0.95rem;
+  }
+  .portfolio-section {
+    padding: 36px 0 24px 0;
+  }
+} 

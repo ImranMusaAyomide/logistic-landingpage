@@ -1,0 +1,7 @@
+ .large-container {
+    width: 100%;
+    background-color: transparent;
+ }
+ .large-container img {
+    margin: 30px;
+ }

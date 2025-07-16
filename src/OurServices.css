@@ -1,0 +1,127 @@
+.ourservices-section {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 48px 0 0 0;
+  background: #f7fafd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ourservices-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+.ourservices-label {
+  color: #ff6a3d;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.ourservices-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #11393b;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+.ourservices-title-highlight {
+  color: #ff6a3d;
+  font-weight: 700;
+}
+
+.ourservices-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.ourservices-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(33, 150, 243, 0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 20px 28px 20px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.ourservices-card:hover {
+  box-shadow: 0 8px 32px rgba(33, 150, 243, 0.13);
+  transform: translateY(-4px) scale(1.02);
+}
+.ourservices-card-img {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.ourservices-card-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.ourservices-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #11393b;
+  margin-bottom: 8px;
+}
+.ourservices-card-desc {
+  color: #444;
+  font-size: 0.98rem;
+  margin-bottom: 18px;
+  min-height: 48px;
+}
+.ourservices-card-link {
+  color: #2196f3;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.98rem;
+  transition: color 0.2s;
+}
+.ourservices-card-link:hover {
+  color: #ff6a3d;
+}
+
+.ourservices-carousel {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #eee;
+  display: inline-block;
+  margin: 0 2px;
+  border: 2px solid #ff6a3d;
+  transition: background 0.2s;
+}
+.dot.active {
+  background: #ff6a3d;
+}
+
+@media (max-width: 1100px) {
+  .ourservices-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+@media (max-width: 700px) {
+  .ourservices-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .ourservices-section {
+    padding: 24px 0 0 0;
+  }
+} 

@@ -1,0 +1,160 @@
+.client-say-root {
+  background: #0d2c34;
+  border-radius: 16px;
+  padding: 36px 32px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.client-say-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 36px;
+}
+
+.client-say-img-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 270px;
+}
+
+.client-say-main-img {
+  width: 260px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+
+.client-say-side-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.client-say-side-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0;
+}
+
+.client-say-content {
+  flex: 1;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 12px 0 12px 0;
+  min-width: 0;
+}
+
+.client-say-back {
+  color: #b0c4c9;
+  font-size: 1rem;
+  letter-spacing: 2.5px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.client-say-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.client-say-highlight {
+  color: #ff6b57;
+}
+
+.client-say-desc {
+  color: #e0e0e0;
+  margin-bottom: 32px;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+.client-say-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.client-say-name {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.client-say-role {
+  color: #b0c4c9;
+  font-size: 0.95rem;
+}
+
+.client-say-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.client-say-stars {
+  font-size: 1.6rem;
+  color: #ffb400;
+  letter-spacing: 2px;
+}
+
+.client-say-pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.client-say-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #2a4a53;
+  display: inline-block;
+  opacity: 0.5;
+}
+.client-say-dot.active {
+  background: #fff;
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .client-say-flex {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .client-say-img-col {
+    flex-direction: row;
+    min-width: 0;
+    gap: 16px;
+  }
+  .client-say-main-img {
+    width: 140px;
+    height: 110px;
+    margin-bottom: 0;
+  }
+  .client-say-side-imgs {
+    flex-direction: row;
+    gap: 8px;
+  }
+  .client-say-side-img {
+    width: 38px;
+    height: 38px;
+  }
+} 
